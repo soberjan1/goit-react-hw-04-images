@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
 import { AppStyled } from './App.styled';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +9,16 @@ import { Loader } from './Loader/Loader';
 import Modal from './Modal/Modal';
 import { fetchImg } from 'services/pixabay-api';
 
-export default class App extends Component {
+const App = () => {
+  const [imgName, setImgname] = useState('initialImage');
+  const [images, setImages] = useState([]);
+  const [page, setPage] = useState('');
+};
+
+export default App;
+//////////////////////
+
+export default class sApp extends Component {
   state = {
     imgName: 'initialImage',
     images: [],
