@@ -1,0 +1,17 @@
+import { ColorRing } from 'react-loader-spinner';
+import { StyledLoader } from './Loader.styled';
+export const Loader = () => {
+  return (
+    <StyledLoader>
+      <ColorRing
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="blocks-loading"
+        wrapperStyle={{}}
+        wrapperClass="blocks-wrapper"
+        colors={['#f0ff1f', '#3037fc', '#f8b26a', '#abbd81', '#849b87']}
+      />
+    </StyledLoader>
+  );
+};
