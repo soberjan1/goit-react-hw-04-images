@@ -20,6 +20,7 @@ const App = () => {
 
   useEffect(() => {
     fetchImgData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, imgName]);
 
   async function fetchImgData() {
