@@ -9,7 +9,7 @@ import { Loader } from './Loader/Loader';
 import Modal from './Modal/Modal';
 import { fetchImg } from 'services/pixabay-api';
 
-const App = () => {
+export const App = () => {
   const [imgName, setImgName] = useState('');
   const [images, setImages] = useState([]);
   const [page, setPage] = useState('');
@@ -87,7 +87,6 @@ const App = () => {
   );
 };
 
-export default App;
 //////////////////////
 
 // export default class sApp extends Component {
